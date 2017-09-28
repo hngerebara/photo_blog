@@ -9,4 +9,9 @@ export class EntryComponent {
     title: string = 'My first photo';
     photo: string = 'http://via.placeholder.com/350x150';
     description: string = 'A description';
+    comments: any[] = [
+        {name: "Hope", comment: "Hope comment"},
+        {name: "Blessing", comment: "Blessing comment"},
+        {name: "Vivian", comment: "Vivian comment"}
+    ]
 }
