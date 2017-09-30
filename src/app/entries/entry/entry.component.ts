@@ -8,4 +8,8 @@ import { Entry } from '../shared/entry.model';
 })
 export class EntryComponent {
     @Input() entry: Entry;
+
+    onCommentAdded(comment: { name: string; comment: string}) {
+        this.entry.comments.push(comment)
+    }
 }
