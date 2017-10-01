@@ -2,9 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
     selector:'app-root',
-    template: 'app.component.html',
+    templateUrl: 'app.component.html',
     styles: ['app.component.css']
 })
 export class AppComponent {
-
+    emoji = ['🎉', '😍', '😜', '👍'];
+    activeEmoji: string;
+    changeEmoji() {
+        this.activeEmoji = this.emoji[Math.floor(Math.random() * this.emoji.length)];
+    }
 }
